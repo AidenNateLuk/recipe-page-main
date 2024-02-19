@@ -1,0 +1,134 @@
+body {
+  font-family: Outfit, young-serif;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(30, 54%, 90%);
+  .card {
+    align-items: start;
+    background-color: white;
+
+    img {
+      width: 100%;
+    }
+    .card-title {
+      padding: 0 1.5rem;
+      h1 {
+        color: hsl(24, 5%, 18%);
+        font-size: 2.5em;
+        font-family: young-serif;
+        font-weight: 800;
+      }
+      p {
+        color: hsl(24, 5%, 18%);
+      }
+    }
+    .preparation-time {
+      padding: 1.5rem 1.5rem;
+
+      h3 {
+        color: hsl(332, 51%, 32%);
+      }
+      ul {
+        color: hsl(332, 51%, 32%);
+      }
+      p {
+        padding: 0 1rem;
+        color: hsl(30, 10%, 34%);
+      }
+    }
+    .ingredients {
+      padding: 0 1.5rem;
+      h2 {
+        color: hsl(14, 45%, 36%);
+        font-family: young-serif;
+      }
+      ul {
+        color: hsl(14, 45%, 36%);
+      }
+      p {
+        padding: 0 1rem;
+        color: hsl(30, 10%, 34%);
+      }
+    }
+    .instructions {
+      padding: 0 1.5rem;
+      h2 {
+        color: hsl(14, 45%, 36%);
+        font-family: young-serif;
+      }
+      ol {
+        color: hsl(14, 45%, 36%);
+        font-weight: bold;
+      }
+      p {
+        padding: 0 1rem;
+        color: hsl(30, 10%, 34%);
+        font-weight: normal;
+      }
+    }
+    .nutrition {
+      padding: 1.5rem;
+      padding: 0 1.5rem;
+      h2 {
+        color: hsl(14, 45%, 36%);
+        font-family: young-serif;
+      }
+      ul {
+        color: hsl(14, 45%, 36%);
+      }
+      p {
+        padding: 0 1rem;
+        color: hsl(30, 10%, 34%);
+      }
+      .nutrition-info {
+        display: flex;
+        flex-direction: column;
+
+        .macro {
+          padding: 0.5rem 1rem;
+          display: flex;
+          justify-content: space-between;
+          border-bottom: hsl(30, 18%, 87%) 1px solid;
+          color: hsl(30, 10%, 34%);
+          strong {
+            color: hsl(14, 45%, 36%);
+            padding-right: 7em;
+          }
+        }
+        .macro:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    overflow-x: hidden;
+
+    .card {
+      border-radius: 15px;
+      margin: auto;
+      padding: 1.5rem;
+      width: 550px;
+
+      img {
+        border-radius: 10px;
+      }
+      .nutrition {
+        .nutrition-info {
+          .macro {
+            strong {
+              padding-right: 12rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
